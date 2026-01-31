@@ -1,0 +1,303 @@
+:root {
+    --forest-green: #65795C;
+    --primary-color: #65795C; /* Forest Green */
+    --accent-color: #65795C; /* Forest Green */
+    --text-color: #65795C; /* Forest Green */
+    --bg-color: #F5F0E7; /* Very light green */
+    --white: #F5F0E7;
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Cormorant Garamond', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    color: var(--forest-green);
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    /* Remove font-size since we use an image */
+    margin-left: 0;
+}
+
+.logo img {
+    height: 64px;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 1rem;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 0 !important;
+    gap: 3.5rem;
+}
+
+.nav-links li a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background: none;
+    position: relative;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.hero-image {
+    width: 100vw;
+    height: 200px;
+    background: url('assets/recto FP.png') repeat-x center center;
+    background-size: auto 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.date {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Countdown */
+.countdown-section {
+    padding: 4rem 10%;
+    text-align: center;
+    background-color: var(--white);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-box span {
+    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+.time-box p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 2rem 0;
+}
+
+/* Section General */
+.section {
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+    padding-left: 0 !important;
+.map-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Playlist */
+.playlist-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* RSVP Button */
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #8B9E77;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding-top: 2rem;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+    
+    #countdown {
+        gap: 1rem;
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
