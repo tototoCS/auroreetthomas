@@ -244,6 +244,10 @@ footer {
     margin-top: auto;
 }
 
+.programme-title {
+    z-index: 2;
+}
+
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     body {
