@@ -212,6 +212,39 @@ footer {
     margin-top: auto;
 }
 
+.programme-row {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    align-items: center;
+}
+
+.programme-title {
+    grid-column: 2;
+    z-index: 1;
+}
+
+.programme-image {
+    grid-column: 1;
+}
+
+.programme-text {
+    grid-column: 2;
+}
+
+.programme-row--diner .programme-title {
+    grid-column: 1;
+}
+
+.programme-row--diner .programme-text {
+    grid-column: 1;
+}
+
+.programme-row--diner .programme-image {
+    grid-column: 2;
+}
+
 .programme-title {
     z-index: 2;
 }
@@ -220,6 +253,27 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+    }
+
+    .programme-row {
+        grid-template-columns: 1fr;
+    }
+
+    .programme-title {
+        grid-column: 1;
+        order: 1;
+    }
+
+    .programme-image {
+        grid-column: 1;
+        order: 2;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .programme-text {
+        grid-column: 1;
+        order: 3;
     }
 
     .nav-links {
