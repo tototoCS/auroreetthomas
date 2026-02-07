@@ -277,6 +277,12 @@ footer {
         display: flex !important;
         justify-content: center !important;
         text-align: center !important;
+        width: 100% !important;
+    }
+
+    .programme-row > .programme-title .programme-title-text {
+        text-align: center !important;
+        width: 100% !important;
     }
 
     .programme-row > .programme-image {
