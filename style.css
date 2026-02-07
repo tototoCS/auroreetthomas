@@ -263,15 +263,18 @@ footer {
 
     .programme-row {
         grid-template-columns: 1fr;
+        grid-auto-flow: row;
     }
 
     .programme-title {
         grid-column: 1;
+        grid-row: auto !important;
         order: 1;
     }
 
     .programme-image {
         grid-column: 1;
+        grid-row: auto !important;
         order: 2;
         margin: 0 !important;
         max-width: 100% !important;
@@ -279,6 +282,7 @@ footer {
 
     .programme-text {
         grid-column: 1;
+        grid-row: auto !important;
         order: 3;
     }
 
