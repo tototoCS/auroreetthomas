@@ -264,21 +264,26 @@ footer {
     .programme-row {
         display: flex !important;
         flex-direction: column !important;
+        flex-wrap: nowrap !important;
         align-items: stretch !important;
     }
 
-    .programme-title {
-        order: 1;
+    .programme-row > * {
+        width: 100% !important;
     }
 
-    .programme-image {
-        order: 2;
+    .programme-row > .programme-title {
+        order: 1 !important;
+    }
+
+    .programme-row > .programme-image {
+        order: 2 !important;
         margin: 0 !important;
         max-width: 100% !important;
     }
 
-    .programme-text {
-        order: 3;
+    .programme-row > .programme-text {
+        order: 3 !important;
     }
 
     .nav-links {
