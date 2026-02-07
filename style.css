@@ -216,10 +216,6 @@ footer {
     z-index: 2;
 }
 
-.programme-title--mobile {
-    display: none;
-}
-
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     body {
@@ -277,14 +273,6 @@ footer {
         padding: 2rem 1rem;
     }
 
-    .programme-title--mobile {
-        display: flex;
-    }
-
-    .programme-title--desktop {
-        display: none !important;
-    }
-
     .programme-row {
         flex-direction: column !important;
         justify-content: flex-start !important;
@@ -298,16 +286,11 @@ footer {
     .programme-image {
         margin: 0 !important;
         max-width: 100% !important;
-        order: 1;
-    }
-
-    .programme-text {
-        order: 2;
     }
 
     .programme-title {
         position: static !important;
-        justify-content: flex-start !important;
+        justify-content: center !important;
         padding-left: 0 !important;
         margin-bottom: 1rem;
     }
@@ -316,7 +299,7 @@ footer {
         font-size: 3rem !important;
         letter-spacing: 0.2rem !important;
         transform: translateX(0) !important;
-        text-align: left;
+        text-align: center;
     }
     
     #countdown {
