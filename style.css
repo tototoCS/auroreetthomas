@@ -68,38 +68,6 @@ nav {
     z-index: 1000;
 }
 
-.logo {
-    font-family: var(--font-heading);
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    /* Remove font-size since we use an image */
-    margin-left: 0;
-}
-
-.logo img {
-    height: 64px;
-    max-width: none;
-    margin-left: 0;
-    margin-right: 1rem;
-    display: block;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin-left: 0 !important;
-    gap: 3.5rem;
-}
-
-.nav-links li a {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.burger {
-    display: none;
     cursor: pointer;
 }
 
