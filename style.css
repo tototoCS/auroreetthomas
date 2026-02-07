@@ -122,18 +122,13 @@ nav {
 
 
 .hero-image {
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background: url('assets/recto FP.png') repeat-x center center;
     background-size: auto 100%;
     margin: 0;
     padding: 0;
     margin-bottom: 2rem;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .hero-content {
@@ -248,8 +243,8 @@ footer {
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     .nav-links {
-        position: absolute;
-        right: -100%;
+        position: fixed;
+        right: 0;
         height: 92vh;
         top: 8vh;
         background-color: var(--bg-color);
@@ -257,8 +252,8 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: none;
-        transition: right 0.5s ease-in;
+        transform: translateX(110%);
+        transition: transform 0.5s ease-in;
         padding-top: 2rem;
         box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     }
@@ -272,7 +267,7 @@ footer {
     }
 
     .nav-active {
-        right: 0;
+        transform: translateX(0);
     }
 
     @keyframes navLinkFade {
