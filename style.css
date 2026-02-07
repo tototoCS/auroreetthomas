@@ -274,6 +274,9 @@ footer {
 
     .programme-row > .programme-title {
         order: 1 !important;
+        display: flex !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 
     .programme-row > .programme-image {
