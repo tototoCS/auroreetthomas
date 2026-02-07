@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programme - Aurore & Thomas</title>
+    <title>Programme – Aurore & Thomas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Lora:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="logo"><a href="index.html" title="Accueil"><img src="assets/Initiales.png" alt="Accueil" style="height:48px;"></a></div>
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="hebergement.html">Hébergement</a></li>
-            <li><a href="voyage.html">Voyage</a></li>
-            <li><a href="infos.html">Infos pratiques</a></li>
-            <li><a href="https://forms.google.com" target="_blank">RSVP</a></li>
+            <li><a href="programme.html">Programme</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -25,24 +23,49 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <header class="hero page-hero">
-        <div class="hero-content">
-            <h1>Programme</h1>
-            <p>Le déroulement de la journée</p>
-        </div>
+
+    <header class="hero" style="min-height: 30vh;">
+        <div class="hero-image"></div>
     </header>
-    <section class="section">
-        <h2>Programme du Mariage</h2>
-        <img src="assets/divider.png" alt="Dividing Flowers" class="divider">
-        <ul class="programme-list">
-            <li><strong>14h00 :</strong> Cérémonie à la mairie</li>
-            <li><strong>15h30 :</strong> Vin d'honneur</li>
-            <li><strong>18h00 :</strong> Dîner et soirée dansante</li>
-        </ul>
+
+    <section class="section" style="background-color: var(--white); position: relative;">
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: flex-start;">
+            <div style="position: relative; max-width: 520px; width: 100%; margin-right: 2rem;">
+                <img src="assets/Eglise-de-St-Gervais.jpg" alt="Église de Saint-Gervais" style="width: 100%; height: auto; display: block;">
+            </div>
+            <div style="max-width: 420px; text-align: left;">
+                <p>
+                    <strong>Samedi 11 juillet - 16H30</strong><br>
+                    Nous vous attendons à 16h30 pour la messe qui sera célébrée par le père Ambroise Riché en l'église de Saint-Gervais-les-Bains.
+                </p>
+            </div>
+        </div>
+        <div style="position: absolute; top: 3rem; left: 0; right: 0; display: flex; justify-content: center; pointer-events: none;">
+            <span style="color: #65795C; font-size: 5rem; letter-spacing: 0.4rem; transform: translateX(18%); font-family: 'Aboreto', sans-serif;">MESSE</span>
+        </div>
     </section>
+
+    <section class="section" style="background-color: #faf0e6;">
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between;">
+            <div style="max-width: 420px; text-align: left;">
+                <h2 style="margin-bottom: 1rem;">Diner et Soirée</h2>
+                <p>
+                    <strong>Samedi 11 juillet - 18H30</strong><br>
+                    A l'issue de la cérémonie religieuse, une réception se tiendra, à partir de 18h30 à la Villa Bel-Mont.<br>
+                    1020 route du Mont Paccard, Saint-Gervais-les-Bains<br>
+                    Cocktail dînatoire et soirée dansante
+                </p>
+            </div>
+            <div style="max-width: 520px; width: 100%;">
+                <img src="assets/jardin saint gervais.jpeg" alt="Jardin Saint-Gervais" style="width: 100%; height: auto; display: block;">
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>Aurore & Thomas &copy; 2026</p>
+        <p>Aurore & Thomas &copy; 2026 - Fait avec Amour</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

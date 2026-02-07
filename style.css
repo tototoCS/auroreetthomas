@@ -5,8 +5,8 @@
     --text-color: #65795C; /* Forest Green */
     --bg-color: #F5F0E7; /* Very light green */
     --white: #F5F0E7;
-    --font-heading: 'Cormorant Garamond', serif;
-    --font-body: 'Cormorant Garamond', serif;
+    --font-heading: 'Aboreto', sans-serif;
+    --font-body: 'Lora', serif;
 }
 
 * {
@@ -120,6 +120,7 @@ nav {
     padding: 2rem 2rem 0 2rem;
 }
 
+
 .hero-image {
     width: 100vw;
     height: 200px;
@@ -151,6 +152,7 @@ nav {
     text-align: center;
     background-color: var(--white);
 }
+
 
 #countdown {
     display: flex;
