@@ -291,6 +291,10 @@ footer {
         align-items: stretch !important;
     }
 
+    .programme-row--diner {
+        flex-direction: column-reverse !important;
+    }
+
     .programme-image {
         margin: 0 !important;
         max-width: 100% !important;
@@ -301,29 +305,9 @@ footer {
         order: 2;
     }
 
-    .programme-title-text {
-        font-size: 3rem !important;
-        letter-spacing: 0.2rem !important;
-    }
-
-    .programme-row {
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-        align-items: stretch !important;
-    }
-
-    .programme-row--diner {
-        flex-direction: column-reverse !important;
-    }
-
-    .programme-image {
-        margin: 0 !important;
-        max-width: 100% !important;
-    }
-
     .programme-title {
         position: static !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         padding-left: 0 !important;
         margin-bottom: 1rem;
     }
@@ -332,7 +316,7 @@ footer {
         font-size: 3rem !important;
         letter-spacing: 0.2rem !important;
         transform: translateX(0) !important;
-        text-align: center;
+        text-align: left;
     }
     
     #countdown {
