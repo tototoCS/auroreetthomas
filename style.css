@@ -285,10 +285,6 @@ footer {
         width: 100% !important;
     }
 
-    .programme-title-text {
-        font-size: 3.6rem !important;
-    }
-
     .programme-row > .programme-image {
         order: 2 !important;
         margin: 0 !important;
