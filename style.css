@@ -302,15 +302,18 @@ footer {
     }
 
     .programme-row {
-        flex-direction: column;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: stretch !important;
     }
 
     .programme-row--diner {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 
     .programme-image {
         margin: 0 !important;
+        max-width: 100% !important;
     }
 
     .programme-title {
