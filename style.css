@@ -262,27 +262,22 @@ footer {
     }
 
     .programme-row {
-        grid-template-columns: 1fr;
-        grid-auto-flow: row;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
     }
 
     .programme-title {
-        grid-column: 1;
-        grid-row: auto !important;
         order: 1;
     }
 
     .programme-image {
-        grid-column: 1;
-        grid-row: auto !important;
         order: 2;
         margin: 0 !important;
         max-width: 100% !important;
     }
 
     .programme-text {
-        grid-column: 1;
-        grid-row: auto !important;
         order: 3;
     }
 
@@ -337,35 +332,6 @@ footer {
         padding: 2rem 1rem;
     }
 
-    .programme-row {
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-        align-items: stretch !important;
-    }
-
-    .programme-row--diner {
-        flex-direction: column-reverse !important;
-    }
-
-    .programme-image {
-        margin: 0 !important;
-        max-width: 100% !important;
-    }
-
-    .programme-title {
-        position: static !important;
-        justify-content: center !important;
-        padding-left: 0 !important;
-        margin-bottom: 1rem;
-    }
-
-    .programme-title-text {
-        font-size: 3rem !important;
-        letter-spacing: 0.2rem !important;
-        transform: translateX(0) !important;
-        text-align: center;
-    }
-    
     #countdown {
         gap: 1rem;
     }
