@@ -223,26 +223,32 @@ footer {
 .programme-title {
     grid-column: 2;
     z-index: 1;
+    grid-row: 1;
 }
 
 .programme-image {
     grid-column: 1;
+    grid-row: 1 / span 2;
 }
 
 .programme-text {
     grid-column: 2;
+    grid-row: 2;
 }
 
 .programme-row--diner .programme-title {
     grid-column: 1;
+    grid-row: 1;
 }
 
 .programme-row--diner .programme-text {
     grid-column: 1;
+    grid-row: 2;
 }
 
 .programme-row--diner .programme-image {
     grid-column: 2;
+    grid-row: 1 / span 2;
 }
 
 .programme-title {
