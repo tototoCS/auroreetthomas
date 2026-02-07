@@ -300,6 +300,30 @@ footer {
     .hero-content {
         padding: 2rem 1rem;
     }
+
+    .programme-row {
+        flex-direction: column;
+    }
+
+    .programme-row--diner {
+        flex-direction: column-reverse;
+    }
+
+    .programme-image {
+        margin: 0 !important;
+    }
+
+    .programme-title {
+        justify-content: center !important;
+        padding-left: 0 !important;
+    }
+
+    .programme-title-text {
+        font-size: 3rem !important;
+        letter-spacing: 0.2rem !important;
+        transform: translateX(0) !important;
+        text-align: center;
+    }
     
     #countdown {
         gap: 1rem;
