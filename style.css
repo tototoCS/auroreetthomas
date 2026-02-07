@@ -122,13 +122,18 @@ nav {
 
 
 .hero-image {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background: url('assets/recto FP.png') repeat-x center center;
     background-size: auto 100%;
     margin: 0;
     padding: 0;
     margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-content {
