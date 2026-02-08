@@ -84,6 +84,8 @@ nav {
     white-space: nowrap;
 }
 
+.burger {
+    display: none;
     cursor: pointer;
 }
 
