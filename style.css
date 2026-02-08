@@ -51,6 +51,12 @@ a {
     transition: color 0.3s ease;
 }
 
+a.link-underline,
+.section a {
+    text-decoration: underline;
+    color: #2f3c36;
+}
+
 a:hover {
     color: var(--accent-color);
 }
