@@ -68,6 +68,22 @@ nav {
     z-index: 1000;
 }
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 0 !important;
+    gap: 3.5rem;
+    flex-wrap: nowrap;
+}
+
+.nav-links li a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-heading);
+    white-space: nowrap;
+}
+
     cursor: pointer;
 }
 
