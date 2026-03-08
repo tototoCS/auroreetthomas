@@ -403,6 +403,21 @@ footer {
         padding: 0 1.5rem;
     }
 
+    .countdown-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .maison-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .maison-image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
     .maison-image {
         max-width: 100% !important;
     }
