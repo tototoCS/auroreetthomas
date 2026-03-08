@@ -142,8 +142,8 @@ nav {
 }
 
 .maison-image {
-    width: 100% !important;
-    max-width: 640px !important;
+    width: min(100%, 720px) !important;
+    max-width: 100% !important;
 }
 
 .date {
