@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Countdown Timer
-    const weddingDate = new Date('July 11, 2026 14:00:00').getTime();
+    const weddingDate = new Date('July 11, 2026 16:30:00').getTime();
 
     const countdown = setInterval(() => {
         const now = new Date().getTime();

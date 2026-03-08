@@ -434,7 +434,7 @@ footer {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: clamp(2.2rem, 6vw, 3rem);
     }
     
     .hero-content {
